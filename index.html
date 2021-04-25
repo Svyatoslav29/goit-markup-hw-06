@@ -370,11 +370,17 @@
                             </ul>
                         </section>
                     </div>
-                     <div class="container-item">
+                     <div class="container-item-subscribe">
                         <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
                         <form class="subscribe-form">
-                            <input class="subscribe-field" type="mail" name="mail" placeholder="E-mail"> 
-                            <button class="button-main" type="submit">Подписаться</button>
+                            <div class="subscribe-form-container">
+                                <input class="subscribe-field" type="mail" name="mail" placeholder="E-mail"> 
+                                <button class="button-main" type="submit">Подписаться
+                                    <svg class="footer-form-icon" width="24" height="24">
+                                        <use href="./images/sprite.svg#icon-telegsend"></use>
+                                    </svg>  
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -382,38 +388,49 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="button-close" data-modal-close >
-                   <svg class="icon" width="11" height="11">
+                   <svg class="icon-close" width="18" height="18">
                      <use href="./images/sprite.svg#icon-vector"></use>
                    </svg>
                 </button>
-                <form class="subscribe-form-modal">
-                    <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                    <label class="subscribe-form-modal-label">
-                        <span>Имя</span>
-                        <input class="subscribe-field" type="text" name="name" placeholder="E-mail">
-                        <svg class="icon" width="11" height="11">
-                            <use href="./images/sprite.svg#icon-man"></use>
-                        </svg> 
-                    </label>
-                    <label class="subscribe-form-modal-label">
-                        <span>Телефон</span>
-                        <input class="subscribe-field" type="tel" name="tel" placeholder="E-mail">
-                        <svg class="icon" width="11" height="11">
-                            <use href="./images/sprite.svg#icon-tel"></use>
-                        </svg> 
-                    </label>
-                    <label class="subscribe-form-modal-label">
-                        <span>Почта</span> 
-                        <input class="subscribe-field" type="mail" name="mail" placeholder="E-mail">
-                        <svg class="icon" width="11" height="11">
-                            <use href="./images/sprite.svg#icon-email"></use>
-                        </svg> 
-                    </label>
-                    <label class="subscribe-form-modal-label">
-                        <span>Коментарий</span>
-                        <input class="subscribe-field" type="text" name="comments" placeholder="Введите текст">
-                    </label>  
-                    <button class="button-main" type="submit">Отправить</button>
+                <form class="form-modal">
+                    <h2 class="form-modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <div class="form-modal-wrap">
+                        <label for="name" class="form-modal-label">Имя</label>
+                            <div class="form-modal-wrap-input">
+                                <input class="form-modal-field" type="text" name="name" id="name">
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./images/sprite.svg#icon-man"></use>
+                                </svg> 
+                            </div>
+                        <label for="tel" class="form-modal-label">Телефон</label>
+                            <div class="form-modal-wrap-input">
+                                <input class="form-modal-field" type="tel" name="tel" id="tel">
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./images/sprite.svg#icon-tel"></use>
+                                </svg> 
+                            </div>
+                        <label for="mail" class="form-modal-label">Почта</label>
+                            <div class="form-modal-wrap-input">
+                                <input class="form-modal-field" type="email" name="name" id="mail">
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./images/sprite.svg#icon-email"></use>
+                                </svg> 
+                            </div>
+                        <label for="comment" class="form-modal-label">Комментарий</label>
+                            <textarea class="form-modal-comment-field" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        <label class="form-modal-label-check">
+                            <input type="checkbox" name="agreement" class="form-modal-field-check">
+                            <svg class="form-check-icon" width="18" height="18">
+                                <use href="./images/sprite.svg#icon-cube"></use>
+                            </svg> 
+                            <p>Соглашаюсь с рассылкой и принимаю
+                                <a href="form-modal-link" style="color:#2196F3">Условия договора</a>
+                            </p>
+                        </label>
+                        <div class="button-div">
+                         <button class="button-main" type="submit">Отправить</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
