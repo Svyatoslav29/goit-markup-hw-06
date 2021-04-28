@@ -734,11 +734,12 @@ transition: fill var(--animation) var(--animation-timing-function);
 }
 
 .footer-title {
+font-weight: bold;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--bg-text-color);;
+color: var(--bg-text-color);
 }
 
 /* модалка */
@@ -809,7 +810,7 @@ line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-color);
-margin-bottom: 12px;
+margin-bottom: 22px;
 }
 
 .form-modal-wrap {
@@ -829,6 +830,7 @@ cursor: pointer;
 border: 1px solid rgba(0, 0, 0, 0.2);
 border-radius: 4px ;
 transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
+margin-bottom: 10px;
 }
 
 .form-modal-field:hover,
@@ -838,7 +840,7 @@ transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-icon {
 position: absolute;
-top: 50%;
+top: 40%;
 left: 12px;
 transform: translateY(-50%);
 transition: fill var(--animation) cubic-bezier(0.4, 0, 0.2, 1)
@@ -854,7 +856,6 @@ transition: fill var(--animation) cubic-bezier(0.4, 0, 0.2, 1)
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-  margin-top: 10px;
 }
 
 .form-modal-comment-field {
@@ -878,7 +879,7 @@ border-color: var(--accent-color);
 .form-modal-label-check {
   margin-top: 20px;
   margin-bottom: 30px;
-  padding: 0 52px 0 52px;
+  padding: 0 50px 0 50px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -902,6 +903,7 @@ border-color: var(--accent-color);
 .form-check-icon {
   margin-right: 5px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .form-modal-link {
